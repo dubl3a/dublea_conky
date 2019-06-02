@@ -35,3 +35,14 @@ I do not own some of these images.  If there is an issue, I will remove them imm
 ## Install
 
 Place contents into `~/config/.conky`
+
+###
+
+To-Do
+
+1. Replace OS logo with ASCII logo pulled through `exec` objects -- In Progress
+2. Replace NVIDIA logo with GPU object\icon\font
+3. Add `if_up - endif ` objects for existing network to hide when not connected
+4. Add LAN connection to display when hard wired also leveraging `if_up | endif ` objects
+5. Add `if_mounted - endif` objects for Network Storage boxes to hide when not at home
+6. Auto add Storage box devices and objects
