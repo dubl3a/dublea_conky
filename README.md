@@ -36,9 +36,7 @@ I do not own some of these images.  If there is an issue, I will remove them imm
 
 Place contents into `~/config/.conky`
 
-###
-
-To-Do
+### To-Do
 
 1. Replace OS logo with ASCII logo pulled through `exec` objects -- In Progress
 2. Replace NVIDIA logo with GPU object\icon\font
