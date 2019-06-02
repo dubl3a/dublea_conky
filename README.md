@@ -1,7 +1,7 @@
 
 # u/dublea's Conky Config
 
-![Screenshot](https://github.com/dubl3a/dublea_conky/blob/master/Screenshot%20.png)
+![](https://github.com/dubl3a/dublea_conky/blob/master/dublea_conky_screenshot.png | width=250)
 
 This is a custom config I created for my laptop after I migrated from Windows 10 to Linux Mint 19.1.  I had posted a [screenshot](https://old.reddit.com/r/linuxmint/comments/btuhru/just_finished_up_setting_up_my_desktop_may_add/) of my desktop with my config and a got a few requests to share it.
 
@@ -34,20 +34,24 @@ I do not own some of these images.  If there is an issue, I will remove them imm
 
 ## Install
 
-Place contents into `~/config/.conky`
+Place contents into `~/.config/conky`
+Run `conky -c ~/.config/conky/conky.conf` to start it up
+Modify the `conky.conf` file while it is running as it will refresh when you save the file.  This will allow you to modify it and verify it working on your system.
 
 ### To-Do
 
 1. Replace OS logo with ASCII logo pulled through `exec` objects -- In Progress
 2. Replace Intel icon with CPU object\font
-2. Replace NVIDIA icon with GPU object\font
-3. Add `if_up - endif ` objects for existing network to hide when not connected
-4. Add LAN connection to display when hard wired also leveraging `if_up | endif ` objects
-5. Add `if_mounted - endif` objects for Network Storage boxes to hide when not at home
-6. Auto add Storage box devices and objects
-7. Create Second Config: conky2.conf
+3. Replace NVIDIA icon with GPU object\font
+4. Add `if_up - endif ` objects for existing network to hide when not connected
+5. Add LAN connection to display when hard wired also leveraging `if_up | endif ` objects
+6. Add `if_mounted - endif` objects for Network Storage boxes to hide when not at home
+7. Add boxes for USB\Removal Media with `if_mounted - endif` objects
+8. Auto add Storage box devices and objects
+9. Create Second Config: conky2.conf
 	* Calendar
     * Weather
     * To-Do list (linked to Google or other)
     * netstat \ firewall stats
     * Fill with other (quote\joke\image of the day; rss feed; reddit feed)
+10. Add AMD Support (would require testers)
