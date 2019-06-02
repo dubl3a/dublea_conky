@@ -44,12 +44,19 @@ Modify the `conky.conf` file while it is running as it will refresh when you sav
 For automatically starting with logging in, create `~/.config/autostart/conky.desktop` filw with the following:
 
 `[Desktop Entry]
+
 Type=Application
+
 Exec=conky -c /home/dublea/.config/conky/conky.conf
+
 Hidden=false
+
 NoDisplay=false
+
 X-GNOME-Autostart-enabled=true
+
 Name=conky
+
 Comment=`
 
 ### To-Do
