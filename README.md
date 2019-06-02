@@ -30,13 +30,27 @@ I do not own some of these images.  If there is an issue, I will remove them imm
 * nvidia-smi for GPU
 * hddtemp
 	* This typically has to be ran with sudo.  To run without sudo run the following:
+	
 	`sudo chmod u+s /usr/sbin/hddtemp`
 
 ## Install
 
 Place contents into `~/.config/conky`
-Run `conky -c ~/.config/conky/conky.conf` to start it up
+
+Run `conky -c ~/.config/conky/conky.conf` to start it up.
+
 Modify the `conky.conf` file while it is running as it will refresh when you save the file.  This will allow you to modify it and verify it working on your system.
+
+For automatically starting with logging in, create `~/.config/autostart/conky.desktop` filw with the following:
+
+`[Desktop Entry]
+Type=Application
+Exec=conky -c /home/dublea/.config/conky/conky.conf
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=conky
+Comment=`
 
 ### To-Do
 
@@ -46,12 +60,13 @@ Modify the `conky.conf` file while it is running as it will refresh when you sav
 4. Add `if_up - endif ` objects for existing network to hide when not connected
 5. Add LAN connection to display when hard wired also leveraging `if_up | endif ` objects
 6. Add `if_mounted - endif` objects for Network Storage boxes to hide when not at home
-7. Add boxes for USB\Removal Media with `if_mounted - endif` objects
-8. Auto add Storage box devices and objects
-9. Create Second Config: conky2.conf
+7. Create install.sh
+8. Add boxes for USB\Removal Media with `if_mounted - endif` objects
+9. Auto add Storage box devices and objects
+10. Create Second Config: conky2.conf
 	* Calendar
     * Weather
     * To-Do list (linked to Google or other)
     * netstat \ firewall stats
     * Fill with other (quote\joke\image of the day; rss feed; reddit feed)
-10. Add AMD Support (would require testers)
+11. Add AMD Support (would require testers)
