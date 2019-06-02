@@ -46,8 +46,8 @@ Place contents into `~/config/.conky`
 5. Add `if_mounted - endif` objects for Network Storage boxes to hide when not at home
 6. Auto add Storage box devices and objects
 7. Create Second Config: conky2.conf
-	a. Calendar
-    b. Weather
-    c. To-Do list (linked to Google or other)
-    d. netstat \ firewall stats
-    e. Fill with other (quote\joke\image of the day; rss feed; reddit feed)
+	* Calendar
+    * Weather
+    * To-Do list (linked to Google or other)
+    * netstat \ firewall stats
+    * Fill with other (quote\joke\image of the day; rss feed; reddit feed)
