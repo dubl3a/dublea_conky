@@ -1,7 +1,7 @@
 
 # u/dublea's Conky Config
 
-![Screenshot](/Screenshot.png)
+![Screenshot](https://github.com/dubl3a/dublea_conky/blob/master/Screenshot%20.png)
 
 This is a custom config I created for my laptop after I migrated from Windows 10 to Linux Mint 19.1.  I had posted a [screenshot](https://old.reddit.com/r/linuxmint/comments/btuhru/just_finished_up_setting_up_my_desktop_may_add/) of my desktop with my config and a got a few requests to share it.
 
